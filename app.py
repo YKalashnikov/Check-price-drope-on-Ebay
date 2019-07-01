@@ -20,7 +20,7 @@ def price_drop():
     price = soup.find(id='prcIsum').get_text()
     formatted_price = float(price[4:8])
 
-    if (formatted_price < 90):
+    if (formatted_price < 98):
         sendEmail()
     print(title)
     print(formatted_price)
